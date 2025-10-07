@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отчёт о результатах внешней оценки — Board AI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__logo">Board AI</div>
+            <nav class="header__nav">
+                <a href="#toc" class="header__link active">Полный отчёт</a>
+                <a href="#" class="header__link">Индивидуальные отчёты</a>
+                <a href="#" class="header__link">Презентация</a>
+                <a href="#" class="header__link">Список вопросов</a>
+            </nav>
+            <button class="header__button">
+                Скачать
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="header__button-icon"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            </button>
+            <button class="header__menu-toggle" aria-label="Открыть меню">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 12H21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3 6H21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3 18H21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <h1 class="hero-section__title">Отчёт о результатах внешней оценки Совета директоров компании {{название компании}}</h1>
+                <p class="hero-section__date">21 сентября 2025 года</p>
+                <p class="hero-section__confidential">Строго конфиденциально</p>
+            </div>
+        </section>
+
+        <section id="toc" class="toc-section">
+            <div class="container">
+                <h2 class="section-title">Содержание</h2>
+                <div class="toc-grid">
+                    <a href="#mission" class="toc-card">Миссия и приоритеты</a>
+                    <a href="#composition" class="toc-card">Состав и компетенции</a>
+                    <a href="#process" class="toc-card">Процесс и динамика работы</a>
+                    <a href="#committees" class="toc-card">Комитеты Совета</a>
+                    <a href="#chairman" class="toc-card">Председатель и Корпоративный секретарь</a>
+                    <a href="#recommendations" class="toc-card">Рекомендации</a>
+                    <a href="#appendix-1" class="toc-card">Приложение 1 – Расхождения в оценках</a>
+                    <a href="#appendix-2" class="toc-card">Приложение 2 – Бенчмаркинг</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="mission" class="content-section content-section--detailed" data-animate>
+            <div class="container">
+                <div class="title-block">
+                    <h2 class="title-block__heading">Миссия и приоритеты Совета директоров</h2>
+                    <p class="title-block__subheading">Как Совет видит свою стратегическую роль, какие приоритеты формирует и как различаются оценки между членами Совета и менеджментом.</p>
+                </div>
+                <div class="score-card">
+                    <div class="score-card__value">3,4 / 5</div>
+                    <p class="score-card__caption">1 – полностью не согласен, 5 – полностью согласен</p>
+                </div>
+                <div class="comparison-chart">
+                    <h3 class="comparison-chart__title">НС vs Менеджмент</h3>
+                    <div class="chart-item"><span class="chart-item__label">Понимание миссии Совета</span><div class="chart-item__bars"><div class="bar bar--ns" style="width: 82%;"><span>НС 4.1</span></div><div class="bar bar--management" style="width: 66%;"><span>Менеджмент 3.3</span></div></div></div>
+                    <div class="chart-item"><span class="chart-item__label">Роль стратегического лидера</span><div class="chart-item__bars"><div class="bar bar--ns" style="width: 80%;"><span>НС 4.0</span></div><div class="bar bar--management" style="width: 70%;"><span>Менеджмент 3.5</span></div></div></div>
+                    <div class="chart-item"><span class="chart-item__label">Баланс повестки (текущее / новое)</span><div class="chart-item__bars"><div class="bar bar--ns" style="width: 62%;"><span>НС 3.1</span></div><div class="bar bar--management" style="width: 72%;"><span>Менеджмент 3.6</span></div></div></div>
+                    <div class="chart-item"><span class="chart-item__label">Эффективность преемственности CEO</span><div class="chart-item__bars"><div class="bar bar--ns" style="width: 68%;"><span>НС 3.4</span></div><div class="bar bar--management" style="width: 70%;"><span>Менеджмент 3.5</span></div></div></div>
+                    <div class="chart-item"><span class="chart-item__label">Сбалансированность дискуссий</span><div class="chart-item__bars"><div class="bar bar--ns" style="width: 66%;"><span>НС 3.3</span></div><div class="bar bar--management" style="width: 78%;"><span>Менеджмент 3.9</span></div></div></div>
+                    <p class="chart-caption">Данные основаны на опросах и интервью участников оценки.</p>
+                </div>
+                <div class="analytical-text"><p>По мнению большинства респондентов, Совет директоров за последние годы усилил свою роль как стратегического лидера компании. Повестка заседаний сместилась от операционных вопросов к стратегическим темам, связанным с развитием и будущим бизнеса.</p><p>При этом оценка показала, что баланс между обсуждением текущих форматов и новых направлений пока не оптимален: часть директоров фокусируется на операционных деталях.</p><p>Опрос выявил разрыв между восприятием миссии Совета членами НС и менеджментом (разница в среднем 0.8 балла). Менеджмент отмечает перегруженность повестки и необходимость чётче определять приоритеты на год.</p></div>
+                <div class="quote-cards-grid"><div class="quote-card"><p><em>“Основная проблема Совета — приоритеты. Мы сейчас обсуждаем почти только будущее, а весь бизнес компании определяют текущие форматы, приносящие 90 % выручки.”</em></p></div><div class="quote-card"><p><em>“Цикличность смены фокуса НС — от операционных к стратегическим темам — полезна, но важно сохранять баланс.”</em></p></div><div class="quote-card"><p><em>“Мы тратим слишком много времени на повторные обсуждения вознаграждений — нужно расширить внимание к темам человеческого капитала.”</em></p></div></div>
+                <div class="key-areas-card"><h3 class="key-areas-card__title">Ключевые направления для развития</h3><ul><li>Чётче определить приоритеты работы Совета.</li><li>Сбалансировать повестку между текущими и новыми инициативами.</li><li>Повысить стратегичность дискуссий.</li><li>Вовлекать менеджмент в формирование повестки.</li><li>Расширить внимание к вопросам ESG и преемственности.</li></ul></div>
+                <div class="summary-block"><p><strong>Вывод:</strong> Совет директоров движется в правильном направлении, укрепляя стратегическую роль, однако нуждается в дальнейшем уточнении миссии, приоритетов и структуры повестки.</p></div>
+            </div>
+        </section>
+        <section id="composition" class="content-section content-section--detailed" data-animate>
+            <div class="container">
+                <div class="title-block"><h2 class="title-block__heading">Состав и компетенции Совета директоров</h2><p class="title-block__subheading">Какие компетенции и опыт представлены в составе Совета, как обеспечивается преемственность, и где выявлены зоны для усиления.</p></div>
+                <div class="score-cards-grid"><div class="score-card"><div class="score-card__value">4,4 / 5</div><p class="score-card__label">Средняя оценка членов НС</p></div><div class="score-card"><div class="score-card__value">4,1 / 5</div><p class="score-card__label">Средняя оценка менеджмента</p></div></div>
+                <p class="score-card__caption--centered">1 – полностью не согласен, 5 – полностью согласен</p>
+                <div class="key-findings-block"><p>Компетенции, навыки и опыт членов Совета разнообразны и комплементарны.</p><p>В Совете налажен и эффективно работает процесс планирования преемственности.</p><p>Директора и менеджмент считают текущий количественный состав оптимальным — в среднем девять директоров.</p><p>По доле независимых директоров Совет находится среди лидеров российского рынка, однако уступает большинству зарубежных компаний по представленности женщин-директоров.</p></div>
+                <div class="comparison-chart"><h3 class="comparison-chart__title">Оценка ключевых компетенций</h3><div class="chart-item"><span class="chart-item__label">Руководство крупными публичными компаниями</span><div class="chart-item__bars"><div class="bar bar--ns" style="width: 94%;"><span>НС 4,7</span></div><div class="bar bar--management" style="width: 78%;"><span>Менеджмент 3,9</span></div></div></div><div class="chart-item"><span class="chart-item__label">Вознаграждение и мотивация</span><div class="chart-item__bars"><div class="bar bar--ns" style="width: 82%;"><span>НС 4,1</span></div><div class="bar bar--management" style="width: 70%;"><span>Менеджмент 3,5</span></div></div></div><div class="chart-item"><span class="chart-item__label">Технологические инновации и новые бизнес-модели</span><div class="chart-item__bars"><div class="bar bar--ns" style="width: 80%;"><span>НС 4,0</span></div><div class="bar bar--management" style="width: 70%;"><span>Менеджмент 3,5</span></div></div></div><div class="chart-item"><span class="chart-item__label">Финансовый менеджмент</span><div class="chart-item__bars"><div class="bar bar--ns" style="width: 88%;"><span>НС 4,4</span></div><div class="bar bar--management" style="width: 80%;"><span>Менеджмент 4,0</span></div></div></div><div class="chart-item"><span class="chart-item__label">HR и организационное развитие</span><div class="chart-item__bars"><div class="bar bar--ns" style="width: 78%;"><span>НС 3,9</span></div><div class="bar bar--management" style="width: 70%;"><span>Менеджмент 3,5</span></div></div></div><div class="chart-item"><span class="chart-item__label">Устойчивое развитие (ESG)</span><div class="chart-item__bars"><div class="bar bar--ns" style="width: 76%;"><span>НС 3,8</span></div><div class="bar bar--management" style="width: 72%;"><span>Менеджмент 3,6</span></div></div></div><p class="chart-caption">Данные основаны на анкетировании и интервью.</p></div>
+                <div class="analytical-text"><p>Большинство директоров отметили, что Совет сбалансирован и покрывает все ключевые компетенции: стратегию, финансы, индустриальное знание и международный опыт.</p><p>Менее высокие оценки получили направления HR, вознаграждения и инновации. Респонденты указали на необходимость усиления экспертизы в сфере управления человеческим капиталом и ESG-компетенций.</p><p>Несколько участников подчеркнули ценность привлечения директоров с опытом управления масштабными многоотраслевыми бизнесами и экосистемами.</p></div>
+                <div class="quote-cards-grid"><div class="quote-card"><p><em>“Нам не хватает понимания, как развивать действительно масштабные бизнесы, выходящие за пределы одной индустрии.”</em></p></div><div class="quote-card"><p><em>“Опыт в HR и организационном развитии сейчас становится критически важным — система вознаграждений и преемственности усложняется.”</em></p></div><div class="quote-card"><p><em>“ESG-компетенция пока представлена на уровне общего понимания, но должна стать отдельным фокусом.”</em></p></div></div>
+                <div class="benchmarking-block"><h3 class="benchmarking-block__title">Бенчмаркинг состава и компетенций</h3><div class="benchmarking-block__grid"><div class="benchmarking-block__text"><p>Совет находится в числе лидеров российских компаний по числу независимых директоров.</p><p>При этом по представленности женщин и разнообразию компетенций уступает зарубежным советам.</p><p>Средний срок участия в Совете — 5,7 лет. Около трети директоров присоединились за последние три года, что соответствует международным практикам.</p></div><div class="benchmarking-block__charts"><div class="chart-placeholder"><span>% независимых директоров</span></div><div class="chart-placeholder"><span>% женщин в совете</span></div><div class="chart-placeholder"><span>Средний срок участия</span></div></div></div></div>
+                <div class="succession-block"><p>Средняя оценка преемственности — 3,4.</p><p>Комментарии директоров показывают, что только члены Комитета по назначениям активно вовлечены в процесс ротации, остальные информированы слабо.</p><p>Рекомендуется сделать обсуждение преемственности открытым для всего Совета и повысить информирование менеджмента о планах ротации.</p></div>
+                <div class="summary-block"><p><strong>Вывод:</strong> Совет директоров демонстрирует сильный и сбалансированный состав, однако требует дальнейшего развития в области HR, ESG и цифровых инноваций, а также большей прозрачности процесса преемственности.</p></div>
+            </div>
+        </section>
+        <section id="process" class="content-section content-section--detailed" data-animate>
+            <div class="container">
+                <div class="title-block"><h2 class="title-block__heading">Процесс и динамика работы Совета директоров</h2><p class="title-block__subheading">Как организованы заседания Совета, насколько эффективна коммуникация, принятие решений и атмосфера на встречах.</p></div>
+                <div class="score-cards-grid score-cards-grid--four-columns"><div class="score-card score-card--compact"><p class="score-card__label">Материалы к заседаниям</p><div class="score-card__value">4,3 / 5</div></div><div class="score-card score-card--compact"><p class="score-card__label">Вовлечённость и подготовка</p><div class="score-card__value">4,5 / 5</div></div><div class="score-card score-card--compact"><p class="score-card__label">Содержательность выступлений</p><div class="score-card__value">4,4 / 5</div></div><div class="score-card score-card--compact"><p class="score-card__label">Принятие решений</p><div class="score-card__value">3,9 / 5</div></div></div>
+                <p class="score-card__caption--centered">1 – полностью не согласен, 5 – полностью согласен. Средние оценки по опросу членов НС и менеджмента.</p>
+                <div class="analytical-text"><p>Организационно-техническое обеспечение заседаний было высоко оценено всеми респондентами. Качество предоставляемых материалов и своевременность их подготовки существенно улучшились за последние годы.</p><p>Директора положительно оценили ясность требований к подготовке и удобство использования цифрового приложения для обмена файлами. Вместе с тем, часть респондентов отметила избыточный объём материалов и перегруженность повестки, что снижает фокус на ключевых вопросах.</p></div>
+                <div class="two-column-block"><div class="column"><h3 class="column__title">Вовлечённость и подготовка</h3><p>Директора и менеджмент очень высоко оценили вовлечённость членов НС и качество подготовки к заседаниям (средняя оценка 4,5). Уровень активности участников варьируется в зависимости от темы, а пандемия и переход в онлайн частично снизили динамику обсуждений.</p></div><div class="column"><h3 class="column__title">Презентации и доклады</h3><p>Доклады менеджмента оцениваются как содержательные и чёткие, однако часто не хватает краткой истории вопроса — контекста предыдущих решений. Респонденты предложили в начале каждой презентации кратко напоминать: какие решения были приняты ранее и что изменилось.</p></div></div>
+                <div class="comparison-chart"><h3 class="comparison-chart__title">Распределение времени заседаний</h3><div class="chart-item"><span class="chart-item__label">Приоритетные вопросы</span><div class="chart-item__bars"><div class="bar bar--plan" style="width: 60%;"><span>План</span></div><div class="bar bar--fact" style="width: 80%;"><span>Факт</span></div></div></div><div class="chart-item"><span class="chart-item__label">Стандартные вопросы</span><div class="chart-item__bars"><div class="bar bar--plan" style="width: 40%;"><span>План</span></div><div class="bar bar--fact" style="width: 30%;"><span>Факт</span></div></div></div><p class="chart-caption">Респонденты отметили несоблюдение тайминга и перегруженность повестки — рекомендуется предварительный анализ длительности вопросов.</p></div>
+                <div class="succession-block"><p>Большинство участников отметили, что дискуссии часто не завершаются конкретным решением, а откладываются на следующее заседание.</p><p>Предлагаемые улучшения:</p><ul><li>формулировать цель обсуждения заранее («принять решение» или «принять к сведению»);</li><li>фиксировать недостающую информацию, если решение отложено;</li><li>вводить практику анонимного голосования или раунда комментариев по ключевым вопросам.</li></ul></div>
+                <div class="quote-cards-grid"><div class="quote-card"><p><em>“Не всегда понятно, как из набора мнений рождается решение — часто вопрос возвращается на следующее заседание.”</em></p></div><div class="quote-card"><p><em>“Продуктивность заседаний резко падает в гибридном формате — Zoom мешает полноценной дискуссии.”</em></p></div><div class="quote-card"><p><em>“Менеджмент чувствует, что на заседаниях иногда ищут слабые места, а не точки роста.”</em></p></div></div>
+                <div class="atmosphere-block"><h3 class="atmosphere-block__title">Атмосфера заседаний</h3><p>Респонденты отметили, что атмосфера заседаний в целом продуктивна, но требует большего доверия и открытости. Некоторые представители менеджмента не чувствуют себя частью коллективного обсуждения, опасаются ошибок и реагируют защитно.</p><p>Отдельные члены Совета склонны задавать слишком операционные вопросы, что снижает уровень стратегичности. Рекомендуется напоминать участникам о фазах дискуссии: сначала вопросы на понимание, потом мнения и комментарии.</p><div class="moderation-block"><p>В ходе заседаний важно сохранять баланс участия:</p><ul><li>наиболее авторитетные члены Совета должны высказываться последними, чтобы не задавать тон обсуждению;</li><li>председателю рекомендуется фасилитировать дискуссию, поддерживать равномерное вовлечение участников и фиксировать только итоговую позицию Совета в протоколе.</li></ul></div></div>
+                <div class="summary-block"><h3 class="summary-block__title">Итоговые выводы по процессу и динамике</h3><p>Совет демонстрирует высокий уровень организации и вовлечённости. Основные зоны развития — сокращение перегруженности повестки, улучшение качества принятия решений и фасилитация заседаний. Дополнительное внимание рекомендуется уделить качеству обратной связи и развитию атмосферы доверия между Советом и менеджментом.</p></div>
+            </div>
+        </section>
+        <section id="committees" class="content-section content-section--detailed" data-animate>
+            <div class="container">
+                <div class="title-block"><h2 class="title-block__heading">Комитеты Совета директоров</h2><p class="title-block__subheading">Как работают комитеты Совета — их эффективность, фокус повестки и зоны для развития.</p></div>
+                <div class="analytical-text"><p>Комитеты — эффективный инструмент повышения качества корпоративного управления. Респонденты отметили вовлечённость председателей комитетов, их тесную работу с менеджментом и вклад в повышение прозрачности решений.</p><p>Основная зона развития — доверие к комитетам и необходимость избегать повторных обсуждений тех же вопросов на заседании НС.</p></div>
+                <div class="key-findings-block"><p><strong>Средние оценки эффективности комитетов:</strong></p><ul><li>Комитет по аудиту и рискам — НС 4.7, Менеджмент 4.4.</li><li>Комитет по назначениям и вознаграждениям — НС 4.7, Менеджмент 3.8.</li><li>Комитет по устойчивому развитию и инновациям — НС 3.7, Менеджмент 4.0.</li></ul></div>
+                <div class="committee-blocks-grid"><div class="committee-block"><h3 class="committee-block__title">Комитет по аудиту и рискам</h3><p>Наиболее высоко оценённый комитет. Регулярно обновляет повестку, глубоко погружается в темы, демонстрирует системную работу и высокий профессионализм председателя.</p><p><strong>Рекомендации:</strong> оптимизировать количество пунктов повестки и сократить продолжительность заседаний.</p></div><div class="committee-block"><h3 class="committee-block__title">Комитет по назначениям и вознаграждениям</h3><p>Эффективен, но перегружен вопросами вознаграждений, не всегда приводящими к решениям. Разделились мнения о совмещении роли председателя НС и председателя комитета.</p><p><strong>Рекомендации:</strong> усилить фокус на управлении талантами и преемственности.</p></div><div class="committee-block"><h3 class="committee-block__title">Комитет по устойчивому развитию и инновациям</h3><p>Усилился по экспертизе и вовлечённости. Создаёт позитивную атмосферу для менеджеров второго уровня и ниже. Некоторыми участниками поставлена под вопрос его актуальность — предлагается сместить акцент в сторону ESG и долгосрочной устойчивости.</p></div></div>
+                <div class="quote-cards-grid"><div class="quote-card"><p><em>“При высокой активности председателя остальные члены комитета иногда передают ему всю ответственность.”</em></p></div><div class="quote-card"><p><em>“Темы в комитетах должны оставаться стратегическими, не уходить в детали.”</em></p></div><div class="quote-card"><p><em>“Комитеты — пространство конструктивной обратной связи, важно сохранить эту культуру.”</em></p></div></div>
+                <div class="summary-block"><p><strong>Вывод:</strong> Комитеты НС работают эффективно и вовлечённо. Ключевые зоны развития — сокращение дублирования тем, фокус на стратегичности и укрепление доверия к комитетам.</p></div>
+            </div>
+        </section>
+        <section id="chairman" class="content-section content-section--detailed" data-animate>
+            <div class="container">
+                <div class="title-block"><h2 class="title-block__heading">Председатель и Корпоративный секретарь</h2><p class="title-block__subheading">Роль лидеров Совета в обеспечении его эффективности.</p></div>
+                <div class="score-cards-grid"><div class="score-card score-card--compact"><p class="score-card__label">Оценка Председателя</p><div class="score-card__value">НС 4.9, Менеджмент 4.4</div></div><div class="score-card score-card--compact"><p class="score-card__label">Оценка Корпоративного секретаря</p><div class="score-card__value">НС 4.9, Менеджмент 4.3</div></div></div>
+                <div class="profile-block"><h3 class="profile-block__title">Председатель Наблюдательного совета</h3><p>Респонденты отмечают высокий уровень вовлечённости, ответственности и неравнодушия Председателя. Он эффективно организует работу НС, мотивирует директоров посещать заседания и следит за дисциплиной. Особо ценится умение фасилитировать дискуссии, вовлекать менее активных участников и синтезировать идеи в реализуемые решения.</p><p><strong>Зоны развития:</strong> выравнивать повестку НС с повесткой основного акционера, поддерживать баланс мнений и вовлечение всех участников, обеспечивать фиксацию только итоговых решений в протоколах.</p><div class="quote-card quote-card--inline"><p><em>“Председатель стремится раскрыть талант каждого члена Совета и создаёт командную атмосферу, а не иерархию.”</em></p></div></div>
+                <div class="profile-block"><h3 class="profile-block__title">Корпоративный секретарь</h3><p>Корпоративный секретарь обеспечивает качественную административную и информационную поддержку НС. Всегда доступен, быстро решает организационные вопросы и обеспечивает своевременную загрузку материалов. Респонденты высоко оценили уровень коммуникации и оперативность.</p><p><strong>Зоны развития:</strong> более строгое документирование решений в протоколах, формализация поручений и контроль их исполнения.</p><div class="quote-card quote-card--inline"><p><em>“Корпоративный секретарь — незаметный, но незаменимый элемент эффективности НС.”</em></p></div></div>
+                <div class="key-areas-card"><h3 class="key-areas-card__title">Вывод</h3><p>Лидеры Совета — Председатель и Корпоративный секретарь — обеспечивают высокий стандарт работы НС. Рекомендовано укреплять преемственность лидерства, повышать прозрачность коммуникаций и вовлекать больше участников в подготовку решений.</p></div>
+            </div>
+        </section>
+        
+        <section id="recommendations" class="content-section">
+            <div class="container">
+                <div class="content-card">
+                    <h2 class="section-title">Рекомендации</h2>
+                </div>
+            </div>
+        </section>
+
+        <section id="appendix-2" class="content-section content-section--detailed" data-animate>
+            <div class="container">
+                <div class="title-block">
+                    <h2 class="title-block__heading">Приложение 2. Бенчмаркинг состава и компетенций Совета директоров</h2>
+                    <p class="title-block__subheading">Сравнение ключевых показателей оцениваемой компании с российскими и международными аналогами.</p>
+                </div>
+                <div class="analytical-text">
+                    <p>Бенчмаркинг позволяет оценить зрелость Совета по структуре, опыту и динамике обновления. Данные основаны на публичных годовых отчётах компаний и результатах оценки Board AI.</p>
+                </div>
+                <div class="data-block">
+                    <h3 class="data-block__title">Средний срок участия в Совете (в годах)</h3>
+                    <p>Оцениваемая компания — <span class="accent-text">5,7 года</span>, Магнит — <span class="accent-text">2,6 года</span>, Лента — <span class="accent-text">4,7 года</span>, М.Видео — <span class="accent-text">4,4 года</span>, Детский мир — <span class="accent-text">1,6 года</span>, Ozon — <span class="accent-text">1 год</span>, НЛМК — <span class="accent-text">9,4 года</span>, МТС — <span class="accent-text">3,8 года</span>, Полюс — <span class="accent-text">6,1 года</span>, Московская биржа — <span class="accent-text">4,3 года</span>, Евраз — <span class="accent-text">9,9 года</span>, Target — <span class="accent-text">6,2 года</span>, Walmart — <span class="accent-text">7,5 года</span>, Tesco — <span class="accent-text">4,1 года</span>, Kroger — <span class="accent-text">8 лет</span>, Amazon — <span class="accent-text">9,2 года</span>.</p>
+                    <p class="comment-text"><em>Средний срок участия директоров — 5,7 года, что соответствует международным практикам. Это выше, чем у большинства российских компаний, но ниже, чем у зрелых зарубежных советов.</em></p>
+                </div>
+                <div class="data-block data-block--white">
+                    <h3 class="data-block__title">Процент новых директоров за последние три года</h3>
+                    <p>Оцениваемая компания — <span class="accent-text">30 %</span>, Магнит — <span class="accent-text">64 %</span>, Лента — <span class="accent-text">77 %</span>, М.Видео — <span class="accent-text">66 %</span>, Детский мир — <span class="accent-text">80 %</span>, Ozon — <span class="accent-text">100 %</span>, НЛМК — <span class="accent-text">33 %</span>, МТС — <span class="accent-text">66 %</span>, Полюс — <span class="accent-text">0 %</span>, Московская биржа — <span class="accent-text">50 %</span>, Евраз — <span class="accent-text">27 %</span>, Target — <span class="accent-text">31 %</span>, Walmart — <span class="accent-text">17 %</span>, Tesco — <span class="accent-text">36 %</span>, Kroger — <span class="accent-text">45 %</span>, Amazon — <span class="accent-text">36 %</span>.</p>
+                    <p class="comment-text">Доля новых директоров за три года составляет 30 %. Это умеренная скорость обновления, характерная для зрелых советов. Российские компании показывают более высокий темп (60–80 %), международные — ниже (15–45 %).</p>
+                </div>
+                <div class="data-block">
+                    <h3 class="data-block__title">Независимые директора и гендерное разнообразие</h3>
+                    <p>Доля независимых директоров — <span class="accent-text">56 %</span>, один из высших показателей среди российских компаний. Женщины в Совете — <span class="accent-text">22 %</span>. Средний показатель по России — <span class="accent-text">14 %</span>, в международных советах — около <span class="accent-text">32 %</span>.</p>
+                    <p class="comment-text"><em>Совет компании близок к международным стандартам по уровню независимости, но уступает по разнообразию компетенций и гендерному балансу.</em></p>
+                </div>
+                <div class="data-block data-block--white">
+                    <h3 class="data-block__title">Размер Совета и частота заседаний</h3>
+                    <p>Количество членов Совета — <span class="accent-text">9</span>. Количество заседаний в году — <span class="accent-text">10–12</span>. Среднее посещение директоров — <span class="accent-text">95 %</span>.</p>
+                    <p class="comment-text"><em>По структуре и частоте заседаний Совет компании соответствует лучшим практикам крупных публичных компаний.</em></p>
+                </div>
+                <div class="data-block">
+                     <h3 class="data-block__title">Анализ по компетенциям</h3>
+                     <ul>
+                        <li>Финансы и аудит — <span class="accent-text">высокий уровень, выше рынка</span>.</li>
+                        <li>Стратегия и управление — <span class="accent-text">высокий</span>.</li>
+                        <li>HR и организационное развитие — <span class="accent-text">ниже среднего</span>.</li>
+                        <li>ESG и устойчивое развитие — <span class="accent-text">на уровне рынка</span>.</li>
+                        <li>Инновации и технологии — <span class="accent-text">чуть ниже международных лидеров</span>.</li>
+                     </ul>
+                     <p class="comment-text"><em>Совет покрывает основные области компетенций, но рекомендуется усилить экспертизу в HR, цифровой трансформации и ESG-направлениях.</em></p>
+                </div>
+                <div class="summary-block summary-block--accent-border">
+                    <h3 class="summary-block__title">Выводы по бенчмаркингу</h3>
+                    <ol>
+                        <li>Совет компании демонстрирует зрелую структуру и высокую независимость.</li>
+                        <li>Срок участия директоров сбалансирован.</li>
+                        <li>Обновление состава идёт умеренными темпами, обеспечивая преемственность.</li>
+                        <li>Гендерное и компетентностное разнообразие остаются зонами роста.</li>
+                        <li>Совет близок к международным практикам по организации работы.</li>
+                    </ol>
+                    <p class="comment-text"><em>Совет компании занимает сильные позиции среди российских эмитентов и постепенно приближается к международным стандартам. Основные направления развития — углубление экспертизы в ESG и HR, а также дальнейшее усиление диверсификации состава.</em></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__copy">© Board AI</div>
+            <a href="#" class="footer__link">Политика конфиденциальности</a>
+        </div>
+    </footer>
+    
+    <a href="#toc" class="back-to-top-button">⬅ Назад к содержанию</a>
+
+    <script src="script.js"></script>
+</body>
+</html>
