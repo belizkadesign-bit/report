@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Индивидуальные оценки — Отчёт Board AI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__logo">Board AI</div>
+            <nav class="header__nav">
+                <a href="index.html" class="header__link">Полный отчёт</a>
+                <a href="individual-reports.html" class="header__link active">Индивидуальные отчёты</a>
+                <a href="presentation.html" class="header__link">Презентация</a>
+                <a href="questions.html" class="header__link">Список вопросов</a>
+            </nav>
+            <button class="header__button">
+                Скачать
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="header__button-icon"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            </button>
+            <button class="header__menu-toggle" aria-label="Открыть меню">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 12H21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3 6H21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3 18H21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <h1 class="hero-section__title">Индивидуальные оценки членов Совета директоров</h1>
+                <p class="hero-section__subheading">Результаты внешней оценки эффективности работы членов Совета директоров {{название компании}}</p>
+                <p class="hero-section__date">21 сентября 2025 года</p>
+                <p class="hero-section__confidential">Строго конфиденциально</p>
+            </div>
+        </section>
+
+        <section class="content-section content-section--detailed" data-animate>
+            <div class="container">
+                <div class="title-block">
+                    <h2 class="title-block__heading">Профиль участника 1</h2>
+                    <p class="title-block__subheading">Индивидуальная оценка члена Совета директоров</p>
+                </div>
+                <div class="analytical-text">
+                    <p>Совет директоров и менеджмент дали Участнику 1 очень высокие оценки за вовлечённость и подготовку к заседаниям. Респонденты отметили, что он органично вписался в роль председателя Совета, быстро завоевал авторитет и влияние. В то же время отмечено, что ему стоит быть более проактивным в развитии отношений с ключевыми акционерами и проявлять большую жёсткость при фасилитации дискуссий, особенно в критические моменты.</p>
+                </div>
+                <div class="data-table__wrap">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Оценка Совета директоров</th>
+                                <th>Оценка менеджмента</th>
+                                <th>Индивидуальная средняя оценка</th>
+                                <th>Средняя оценка по всем членам Совета</th>
+                                <th>Средняя оценка Совета директоров</th>
+                                <th>Средняя оценка менеджмента</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="num">4.8</td>
+                                <td class="num">4.5</td>
+                                <td class="num">4.65</td>
+                                <td class="num">4.2</td>
+                                <td class="num">4.5</td>
+                                <td class="num">3.9</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="comment-text"><i>*Индивидуальные оценки основаны на результатах анкетирования и интервью с членами Совета директоров и представителями менеджмента.</i></p>
+            </div>
+        </section>
+
+        <section class="content-section content-section--detailed" data-animate>
+            <div class="container">
+                <div class="title-block">
+                    <h2 class="title-block__heading">Профиль участника 2</h2>
+                    <p class="title-block__subheading">Индивидуальная оценка члена Совета директоров</p>
+                </div>
+                <div class="analytical-text">
+                    <p>Участник 2 получил высокие оценки за глубокую экспертизу в финансовой сфере и вклад в работу Комитета по аудиту. Отмечается его конструктивный подход и способность задавать точные, стратегически важные вопросы. Рекомендовано активнее участвовать в обсуждениях, не связанных с финансами, для более широкого вклада в повестку.</p>
+                </div>
+                <div class="data-table__wrap">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Оценка Совета директоров</th>
+                                <th>Оценка менеджмента</th>
+                                <th>Индивидуальная средняя оценка</th>
+                                <th>Средняя оценка по всем членам Совета</th>
+                                <th>Средняя оценка Совета директоров</th>
+                                <th>Средняя оценка менеджмента</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="num">4.6</td>
+                                <td class="num">4.3</td>
+                                <td class="num">4.45</td>
+                                <td class="num">4.2</td>
+                                <td class="num">4.5</td>
+                                <td class="num">3.9</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="comment-text"><i>*Индивидуальные оценки основаны на результатах анкетирования и интервью с членами Совета директоров и представителями менеджмента.</i></p>
+            </div>
+        </section>
+        
+        <section class="content-section content-section--detailed" data-animate>
+            <div class="container">
+                <div class="title-block">
+                    <h2 class="title-block__heading">Профиль участника 3</h2>
+                    <p class="title-block__subheading">Индивидуальная оценка члена Совета директоров</p>
+                </div>
+                <div class="analytical-text">
+                    <p>Участник 3 ценится за независимость суждений и опыт в области корпоративного управления. Его комментарии всегда взвешены и направлены на долгосрочные интересы компании. Некоторые респонденты отметили, что его экспертиза в операционных вопросах могла бы быть глубже, что иногда сказывается на качестве рекомендаций для менеджмента.</p>
+                </div>
+                <div class="data-table__wrap">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Оценка Совета директоров</th>
+                                <th>Оценка менеджмента</th>
+                                <th>Индивидуальная средняя оценка</th>
+                                <th>Средняя оценка по всем членам Совета</th>
+                                <th>Средняя оценка Совета директоров</th>
+                                <th>Средняя оценка менеджмента</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="num">4.4</td>
+                                <td class="num">4.0</td>
+                                <td class="num">4.20</td>
+                                <td class="num">4.2</td>
+                                <td class="num">4.5</td>
+                                <td class="num">3.9</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="comment-text"><i>*Индивидуальные оценки основаны на результатах анкетирования и интервью с членами Совета директоров и представителями менеджмента.</i></p>
+            </div>
+        </section>
+
+        <section class="content-section content-section--detailed" data-animate>
+            <div class="container">
+                <div class="title-block">
+                    <h2 class="title-block__heading">Профиль участника 4</h2>
+                    <p class="title-block__subheading">Индивидуальная оценка члена Совета директоров</p>
+                </div>
+                <div class="analytical-text">
+                    <p>Респонденты высоко оценивают вклад Участника 4 в вопросы стратегии и развития новых технологий. Его участие в дискуссиях помогает Совету смотреть в будущее и оценивать инновационные риски. Рекомендовано уделить больше внимания вопросам кадровой политики и преемственности, чтобы сбалансировать свой вклад.</p>
+                </div>
+                <div class="data-table__wrap">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Оценка Совета директоров</th>
+                                <th>Оценка менеджмента</th>
+                                <th>Индивидуальная средняя оценка</th>
+                                <th>Средняя оценка по всем членам Совета</th>
+                                <th>Средняя оценка Совета директоров</th>
+                                <th>Средняя оценка менеджмента</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="num">4.7</td>
+                                <td class="num">4.4</td>
+                                <td class="num">4.55</td>
+                                <td class="num">4.2</td>
+                                <td class="num">4.5</td>
+                                <td class="num">3.9</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="comment-text"><i>*Индивидуальные оценки основаны на результатах анкетирования и интервью с членами Совета директоров и представителями менеджмента.</i></p>
+            </div>
+        </section>
+
+        <section class="content-section content-section--detailed" data-animate>
+            <div class="container">
+                <div class="title-block">
+                    <h2 class="title-block__heading">Профиль участника 5</h2>
+                    <p class="title-block__subheading">Индивидуальная оценка члена Совета директоров</p>
+                </div>
+                <div class="analytical-text">
+                    <p>Участник 5 является ключевым экспертом в области HR и организационного развития. Его участие в Комитете по назначениям и вознаграждениям оценивается как высокоэффективное. Некоторые члены Совета считают, что ему следует более активно делиться своей экспертизой на общих заседаниях.</p>
+                </div>
+                <div class="data-table__wrap">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Оценка Совета директоров</th>
+                                <th>Оценка менеджмента</th>
+                                <th>Индивидуальная средняя оценка</th>
+                                <th>Средняя оценка по всем членам Совета</th>
+                                <th>Средняя оценка Совета директоров</th>
+                                <th>Средняя оценка менеджмента</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="num">4.3</td>
+                                <td class="num">4.1</td>
+                                <td class="num">4.20</td>
+                                <td class="num">4.2</td>
+                                <td class="num">4.5</td>
+                                <td class="num">3.9</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="comment-text"><i>*Индивидуальные оценки основаны на результатах анкетирования и интервью с членами Совета директоров и представителями менеджмента.</i></p>
+            </div>
+        </section>
+
+        <section class="content-section content-section--detailed" data-animate>
+            <div class="container">
+                <div class="title-block">
+                    <h2 class="title-block__heading">Профиль участника 6</h2>
+                    <p class="title-block__subheading">Индивидуальная оценка члена Совета директоров</p>
+                </div>
+                <div class="analytical-text">
+                    <p>Оценки Участника 6 стабильны и высоки по всем параметрам. Он эффективно использует свой опыт для оценки рисков и комплаенса. Респонденты отмечают его сбалансированный подход и умение находить компромиссы. Зона роста — более активное участие в формировании ESG-повестки.</p>
+                </div>
+                <div class="data-table__wrap">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Оценка Совета директоров</th>
+                                <th>Оценка менеджмента</th>
+                                <th>Индивидуальная средняя оценка</th>
+                                <th>Средняя оценка по всем членам Совета</th>
+                                <th>Средняя оценка Совета директоров</th>
+                                <th>Средняя оценка менеджмента</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="num">4.5</td>
+                                <td class="num">4.2</td>
+                                <td class="num">4.35</td>
+                                <td class="num">4.2</td>
+                                <td class="num">4.5</td>
+                                <td class="num">3.9</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="comment-text"><i>*Индивидуальные оценки основаны на результатах анкетирования и интервью с членами Совета директоров и представителями менеджмента.</i></p>
+            </div>
+        </section>
+
+        <section class="content-section content-section--detailed" data-animate>
+            <div class="container">
+                <div class="title-block">
+                    <h2 class="title-block__heading">Профиль участника 7</h2>
+                    <p class="title-block__subheading">Индивидуальная оценка члена Совета директоров</p>
+                </div>
+                <div class="analytical-text">
+                    <p>Участник 7 привносит в Совет ценный международный опыт и понимание глобальных трендов. Его участие помогает компании оценивать свои позиции на мировом рынке. Отмечается, что иногда его рекомендации сложно адаптировать к российской специфике, что требует дополнительного обсуждения с менеджментом.</p>
+                </div>
+                <div class="data-table__wrap">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Оценка Совета директоров</th>
+                                <th>Оценка менеджмента</th>
+                                <th>Индивидуальная средняя оценка</th>
+                                <th>Средняя оценка по всем членам Совета</th>
+                                <th>Средняя оценка Совета директоров</th>
+                                <th>Средняя оценка менеджмента</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="num">4.4</td>
+                                <td class="num">4.1</td>
+                                <td class="num">4.25</td>
+                                <td class="num">4.2</td>
+                                <td class="num">4.5</td>
+                                <td class="num">3.9</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="comment-text"><i>*Индивидуальные оценки основаны на результатах анкетирования и интервью с членами Совета директоров и представителями менеджмента.</i></p>
+            </div>
+        </section>
+
+        <section class="content-section content-section--detailed" data-animate>
+            <div class="container">
+                <div class="title-block">
+                    <h2 class="title-block__heading">Профиль участника 8</h2>
+                    <p class="title-block__subheading">Индивидуальная оценка члена Совета директоров</p>
+                </div>
+                <div class="analytical-text">
+                    <p>Участник 8, как представитель менеджмента, обеспечивает качественную связь между Советом и исполнительными органами. Его доклады всегда содержательны и хорошо подготовлены. Рекомендовано более активно участвовать в стратегических дискуссиях, а не только представлять отчётность.</p>
+                </div>
+                <div class="data-table__wrap">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Оценка Совета директоров</th>
+                                <th>Оценка менеджмента</th>
+                                <th>Индивидуальная средняя оценка</th>
+                                <th>Средняя оценка по всем членам Совета</th>
+                                <th>Средняя оценка Совета директоров</th>
+                                <th>Средняя оценка менеджмента</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="num">4.2</td>
+                                <td class="num">4.5</td>
+                                <td class="num">4.35</td>
+                                <td class="num">4.2</td>
+                                <td class="num">4.5</td>
+                                <td class="num">3.9</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="comment-text"><i>*Индивидуальные оценки основаны на результатах анкетирования и интервью с членами Совета директоров и представителями менеджмента.</i></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__copy">© Board AI</div>
+            <a href="#" class="footer__link">Политика конфиденциальности</a>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

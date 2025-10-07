@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список вопросов — Отчёт Board AI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__logo">Board AI</div>
+            <nav class="header__nav">
+                <a href="index.html" class="header__link">Полный отчёт</a>
+                <a href="individual-reports.html" class="header__link">Индивидуальные отчёты</a>
+                <a href="presentation.html" class="header__link">Презентация</a>
+                <a href="questions.html" class="header__link active">Список вопросов</a>
+            </nav>
+            <button class="header__button">
+                Скачать
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="header__button-icon"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            </button>
+            <button class="header__menu-toggle" aria-label="Открыть меню">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 12H21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3 6H21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3 18H21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <h1 class="hero-section__title">Список вопросов и наблюдений</h1>
+                <p class="hero-section__subheading">Ключевые темы, поднятые в ходе интервью с членами Совета директоров и менеджментом</p>
+            </div>
+        </section>
+
+        <section class="content-section" data-animate>
+            <div class="container">
+                <div class="score-cards-grid">
+                    <div class="score-card">
+                        <div class="score-card__value">30</div>
+                        <p class="score-card__label">вопросов для обсуждения</p>
+                    </div>
+                    <div class="score-card">
+                        <div class="score-card__value">8</div>
+                        <p class="score-card__label">наблюдений для развития</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="questions-list" class="content-section content-section--detailed" data-animate>
+            <div class="container">
+                <div class="title-block">
+                    <h2 class="title-block__heading">Основные вопросы оценки</h2>
+                    <p class="title-block__subheading">В этом разделе представлены ключевые вопросы, которые обсуждались в ходе интервью. Ответы сгруппированы по темам и дополнены анонимными цитатами для иллюстрации различных мнений.</p>
+                </div>
+                <div class="questions-container">
+                    <ol class="questions-list">
+                        <li>
+                            <p class="question-text"><strong>Насколько хорошо Совет директоров понимает и разделяет миссию компании?</strong></p>
+                            <p class="answer-summary">В целом, понимание миссии высокое, но есть расхождения в том, как она транслируется в стратегические приоритеты.</p>
+                            <div class="quote-cards-grid quote-cards-grid--two-columns">
+                                <div class="quote-card"><p><em>“Мы все согласны с миссией на бумаге, но на практике каждый тянет в свою сторону.”</em></p></div>
+                                <div class="quote-card"><p><em>“Миссия должна быть не просто лозунгом, а рабочим инструментом для принятия решений.”</em></p></div>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="question-text"><strong>Считаете ли вы текущий состав Совета сбалансированным по компетенциям?</strong></p>
+                            <p class="answer-summary">Большинство считает состав сбалансированным, однако отмечается нехватка экспертизы в HR и новых технологиях.</p>
+                            <div class="quote-cards-grid quote-cards-grid--two-columns">
+                                <div class="quote-card"><p><em>“У нас сильные финансисты и стратеги, но мы отстаем в понимании цифровых трендов.”</em></p></div>
+                                <div class="quote-card"><p><em>“Нужен человек, который разбирается в управлении талантами на глобальном уровне.”</em></p></div>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="question-text"><strong>Как вы оцениваете эффективность процесса принятия решений на заседаниях?</strong></p>
+                            <p class="answer-summary">Процесс часто затягивается, решения откладываются. Не всегда ясен итог обсуждения.</p>
+                            <div class="quote-cards-grid quote-cards-grid--two-columns">
+                                <div class="quote-card"><p><em>“Мы много обсуждаем, но редко принимаем окончательное решение. Вопросы ‘зависают’.”</em></p></div>
+                                <div class="quote-card"><p><em>“Не хватает дисциплины: нужно четко фиксировать, что решили и кто ответственный.”</em></p></div>
+                            </div>
+                        </li>
+                         <li>
+                            <p class="question-text"><strong>Достаточно ли времени на заседаниях уделяется стратегическим вопросам?</strong></p>
+                            <p class="answer-summary">Мнения разделились. Часть директоров считает, что повестка перегружена операционными вопросами, другие — что баланс соблюдается.</p>
+                             <div class="quote-cards-grid quote-cards-grid--two-columns">
+                                <div class="quote-card"><p><em>“Мы тонем в текучке. Стратегию обсуждаем раз в квартал, и то поверхностно.”</em></p></div>
+                                <div class="quote-card"><p><em>“Стратегия — это не отдельный пункт повестки, она должна быть в каждом вопросе.”</em></p></div>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="question-text"><strong>Насколько эффективно работают комитеты Совета?</strong></p>
+                            <p class="answer-summary">Комитеты в целом эффективны, но их решениям не всегда доверяют, и вопросы повторно обсуждаются на общем заседании.</p>
+                            <div class="quote-cards-grid quote-cards-grid--two-columns">
+                                <div class="quote-card"><p><em>“Комитет по аудиту работает как часы, а вот стратегический комитет собирается редко.”</em></p></div>
+                                <div class="quote-card"><p><em>“Зачем нам комитеты, если мы потом все равно тратим час на то же самое на Совете?”</em></p></div>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="question-text"><strong>Как вы оцениваете качество материалов, предоставляемых к заседаниям?</strong></p>
+                            <p class="answer-summary">Качество высокое, но объем избыточен. Не хватает кратких резюме и четко сформулированных предложений.</p>
+                            <div class="quote-cards-grid quote-cards-grid--two-columns">
+                                <div class="quote-card"><p><em>“Получаем по 200 страниц, прочитать все нереально. Нужна выжимка.”</em></p></div>
+                                <div class="quote-card"><p><em>“Материалы хорошие, но часто не хватает контекста: что мы решали по этому поводу раньше?”</em></p></div>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="question-text"><strong>Существует ли в Совете культура конструктивного спора и открытости?</strong></p>
+                            <p class="answer-summary">Культура есть, но она зависит от темы и участников. Некоторые директора доминируют в дискуссии.</p>
+                            <div class="quote-cards-grid quote-cards-grid--two-columns">
+                                <div class="quote-card"><p><em>“С некоторыми коллегами можно спорить, с другими — себе дороже. Их мнение всегда побеждает.”</em></p></div>
+                                <div class="quote-card"><p><em>“Менеджмент боится приносить плохие новости, потому что реакция бывает слишком резкой.”</em></p></div>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="question-text"><strong>Насколько эффективно Совет контролирует исполнение своих решений?</strong></p>
+                            <p class="answer-summary">Контроль слабый. Поручения часто теряются, нет системы отслеживания.</p>
+                            <div class="quote-cards-grid quote-cards-grid--two-columns">
+                                <div class="quote-card"><p><em>“Мы приняли решение, а через полгода выясняется, что ничего не сделано. И никто не виноват.”</em></p></div>
+                                <div class="quote-card"><p><em>“Нужен дашборд, где будет видно статус по каждому поручению. Сейчас это черный ящик.”</em></p></div>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="question-text"><strong>Как вы оцениваете взаимодействие между Советом и менеджментом?</strong></p>
+                            <p class="answer-summary">Взаимодействие в целом конструктивное, но не хватает неформального общения и доверия.</p>
+                            <div class="quote-cards-grid quote-cards-grid--two-columns">
+                                <div class="quote-card"><p><em>“Отношения слишком формальные. Мы видимся только на заседаниях, где они отчитываются.”</em></p></div>
+                                <div class="quote-card"><p><em>“Менеджмент воспринимает нас как контролеров, а не как партнеров.”</em></p></div>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="question-text"><strong>Уделяет ли Совет достаточно внимания вопросам управления рисками?</strong></p>
+                            <p class="answer-summary">Финансовые риски обсуждаются хорошо, а стратегические и операционные — недостаточно.</p>
+                            <div class="quote-cards-grid quote-cards-grid--two-columns">
+                                <div class="quote-card"><p><em>“Мы отлично разбираемся в кредитных рисках, но можем пропустить технологический сдвиг, который убьет наш бизнес.”</em></p></div>
+                                <div class="quote-card"><p><em>“Карта рисков есть, но мы на нее смотрим раз в год. Это формальность.”</em></p></div>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="question-text"><strong>Насколько эффективно планируется преемственность CEO и ключевых руководителей?</strong></p>
+                            <p class="answer-summary">Процесс формально есть, но он непрозрачен и не обсуждается на уровне всего Совета.</p>
+                        </li>
+                        <li>
+                            <p class="question-text"><strong>Как вы оцениваете работу Председателя Совета?</strong></p>
+                            <p class="answer-summary">Председатель — сильный лидер, но иногда его авторитет подавляет дискуссию.</p>
+                        </li>
+                        <li>
+                            <p class="question-text"><strong>Удовлетворены ли вы гендерным и культурным разнообразием в Совете?</strong></p>
+                            <p class="answer-summary">Большинство считает, что разнообразия недостаточно для принятия сбалансированных решений.</p>
+                        </li>
+                        <li>
+                            <p class="question-text"><strong>Насколько эффективно Совет использует технологии для своей работы?</strong></p>
+                            <p class="answer-summary">Используется портал для документов, но потенциал цифровых инструментов раскрыт не полностью.</p>
+                        </li>
+                        <li>
+                            <p class="question-text"><strong>Есть ли у Совета четкий план по самооценке и развитию?</strong></p>
+                            <p class="answer-summary">Формальная оценка проводится, но ее результаты редко обсуждаются и не ведут к изменениям.</p>
+                        </li>
+                        <li>
+                            <p class="question-text"><strong>Как Совет участвует в формировании корпоративной культуры?</strong></p>
+                            <p class="answer-summary">Участие минимальное. Совет задает тон “сверху”, но не погружается в вопросы культуры.</p>
+                        </li>
+                        <li>
+                            <p class="question-text"><strong>Достаточно ли внимания уделяется вопросам ESG и устойчивого развития?</strong></p>
+                            <p class="answer-summary">Тема признается важной, но обсуждается формально. Не хватает интеграции ESG в стратегию.</p>
+                        </li>
+                        <li>
+                            <p class="question-text"><strong>Насколько хорошо вы информированы о деятельности компании между заседаниями?</strong></p>
+                            <p class="answer-summary">Информации достаточно, но она носит формальный характер. Не хватает неформальных апдейтов.</p>
+                        </li>
+                        <li>
+                            <p class="question-text"><strong>Считаете ли вы систему вознаграждения директоров справедливой и мотивирующей?</strong></p>
+                            <p class="answer-summary">Система в целом устраивает, но нет прямой связи с долгосрочными результатами компании.</p>
+                        </li>
+                        <li>
+                            <p class="question-text"><strong>Какова роль Совета в отношениях с инвесторами и стейкхолдерами?</strong></p>
+                            <p class="answer-summary">Роль пассивная. В основном этим занимается менеджмент и Председатель.</p>
+                        </li>
+                        <li>
+                            <p class="question-text"><strong>Что можно улучшить в процессе введения в должность новых членов Совета?</strong></p>
+                            <p class="answer-summary">Процесс слишком формальный. Новичкам не хватает погружения в бизнес и знакомства с командой.</p>
+                        </li>
+                        <li>
+                            <p class="question-text"><strong>Насколько эффективно Совет работает в гибридном или удаленном формате?</strong></p>
+                            <p class="answer-summary">Эффективность падает. Сложно поддерживать динамику и вовлеченность.</p>
+                        </li>
+                         <li>
+                            <p class="question-text"><strong>Есть ли у вас возможность для неформального общения с другими членами Совета?</strong></p>
+                            <p class="answer-summary">Таких возможностей мало, что мешает построению доверительных отношений.</p>
+                        </li>
+                        <li>
+                            <p class="question-text"><strong>Как вы оцениваете работу Корпоративного секретаря?</strong></p>
+                            <p class="answer-summary">Работа оценивается очень высоко. Корпоративный секретарь — ключевой элемент эффективности Совета.</p>
+                        </li>
+                        <li>
+                            <p class="question-text"><strong>Чувствуете ли вы, что ваше мнение слышат и учитывают?</strong></p>
+                            <p class="answer-summary">В целом да, но мнение “тяжеловесов” часто оказывается решающим.</p>
+                        </li>
+                        <li>
+                            <p class="question-text"><strong>Насколько Совет готов к кризисным ситуациям?</strong></p>
+                            <p class="answer-summary">Недостаточно. Нет четкого плана действий, роль Совета в кризис не определена.</p>
+                        </li>
+                        <li>
+                            <p class="question-text"><strong>Как Совет оценивает работу CEO?</strong></p>
+                            <p class="answer-summary">Оценка происходит, но ее критерии непрозрачны и не всегда связаны со стратегией.</p>
+                        </li>
+                        <li>
+                            <p class="question-text"><strong>Что является самым большим вызовом для Совета на ближайший год?</strong></p>
+                            <p class="answer-summary">Главные вызовы — цифровая трансформация, усиление конкуренции и геополитическая нестабильность.</p>
+                        </li>
+                        <li>
+                            <p class="question-text"><strong>Насколько эффективно Совет использует внешних консультантов?</strong></p>
+                            <p class="answer-summary">Консультантов привлекают, но их рекомендации не всегда адаптированы к реалиям компании.</p>
+                        </li>
+                        <li>
+                            <p class="question-text"><strong>Что бы вы изменили в работе Совета в первую очередь?</strong></p>
+                            <p class="answer-summary">Большинство хотело бы улучшить дисциплину принятия решений и сфокусировать повестку на стратегии.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <section id="observations" class="content-section content-section--detailed" data-animate>
+            <div class="container">
+                <div class="title-block">
+                    <h2 class="title-block__heading">Ключевые наблюдения</h2>
+                    <p class="title-block__subheading">В ходе анализа интервью и анкет были выявлены системные наблюдения, касающиеся динамики и культуры работы Совета.</p>
+                </div>
+                <div class="key-areas-card">
+                    <h3 class="key-areas-card__title">Список наблюдений</h3>
+                    <ul>
+                        <li>
+                            <strong>"Эффект группы" и доминирование:</strong> В дискуссиях часто доминируют одни и те же участники, что мешает услышать альтернативные мнения. Менее опытные или менее уверенные в себе члены Совета и менеджеры предпочитают отмалчиваться.
+                            <div class="quote-card quote-card--inline" style="margin-top: 10px; width: 100%;"><p><em>“Когда X начинает говорить, все остальные замолкают. Спорить с ним решаются немногие.”</em></p></div>
+                        </li>
+                        <li>
+                            <strong>Дефицит доверия между Советом и менеджментом:</strong> Менеджмент воспринимает Совет как контролирующий, а не как поддерживающий орган. Это приводит к "защитной" позиции и нежеланию делиться плохими новостями.
+                            <div class="quote-card quote-card--inline" style="margin-top: 10px; width: 100%;"><p><em>“Мы приходим на Совет как на экзамен. Любая ошибка может стоить дорого.”</em></p></div>
+                        </li>
+                        <li>
+                            <strong>"Ритуальные" обсуждения ESG:</strong> Тема ESG присутствует в повестке, но обсуждается формально, для галочки. Нет реальной интеграции в бизнес-стратегию и KPI.
+                             <div class="quote-card quote-card--inline" style="margin-top: 10px; width: 100%;"><p><em>“Про ESG поговорили 15 минут, поставили галочку и забыли до следующего квартала.”</em></p></div>
+                        </li>
+                        <li>
+                            <strong>Слабый фокус на человеческом капитале:</strong> Вопросы HR, талантов и корпоративной культуры обсуждаются редко и поверхностно, несмотря на их стратегическую важность.
+                             <div class="quote-card quote-card--inline" style="margin-top: 10px; width: 100%;"><p><em>“Мы можем часами обсуждать финансовую модель, но на разговор о людях, которые ее реализуют, времени не остается.”</em></p></div>
+                        </li>
+                        <li>
+                            <strong>Неэффективность гибридного формата:</strong> Гибридные заседания (часть участников очно, часть — онлайн) значительно снижают качество коммуникации и вовлеченность.
+                             <div class="quote-card quote-card--inline" style="margin-top: 10px; width: 100%;"><p><em>“Те, кто в Zoom, фактически выпадают из дискуссии. Их почти не слышно, и они не чувствуют динамику.”</em></p></div>
+                        </li>
+                        <li>
+                            <strong>Разрыв между решениями и их исполнением:</strong> Отсутствует системный контроль за исполнением поручений Совета. Многие хорошие идеи так и остаются на бумаге.
+                             <div class="quote-card quote-card--inline" style="margin-top: 10px; width: 100%;"><p><em>“Приняли решение, записали в протокол, и на этом все. Никто не отслеживает, что происходит дальше.”</em></p></div>
+                        </li>
+                        <li>
+                            <strong>Недостаток неформальной коммуникации:</strong> Члены Совета и менеджмент практически не общаются вне официальных заседаний, что мешает формированию доверия и командного духа.
+                            <div class="quote-card quote-card--inline" style="margin-top: 10px; width: 100%;"><p><em>“Мы знаем друг друга как функции, а не как людей. Это мешает работать в команде.”</em></p></div>
+                        </li>
+                        <li>
+                            <strong>Страх перед "неудобными" вопросами:</strong> Существуют "запретные" темы или вопросы, которые не принято поднимать, чтобы не портить отношения с ключевыми фигурами.
+                            <div class="quote-card quote-card--inline" style="margin-top: 10px; width: 100%;"><p><em>“Все понимают, что есть проблема, но никто не хочет быть тем, кто ее озвучит.”</em></p></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__copy">© Board AI</div>
+            <a href="#" class="footer__link">Политика конфиденциальности</a>
+        </div>
+    </footer>
+    
+    <a href="#" class="back-to-top-button" style="display: none;"></a>
+
+    <script src="script.js"></script>
+</body>
+</html>
